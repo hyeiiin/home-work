@@ -1,0 +1,41 @@
+.term {
+  box-sizing: border-box;
+  padding: 12px 16px 16px;
+  width: 250px;
+  height: 259px;
+  background-color: #cccccc;
+  border: 1px solid #a3a3a3;
+  border-radius: 5px;
+}
+dd,
+dt {
+  margin: 0;
+  line-height: 150%;
+}
+.term h1 {
+  font-weight: 700;
+  font-size: 15px;
+}
+.left {
+  float: left;
+  margin-right: 20px;
+}
+.right {
+  float: right;
+  margin-left: 20px;
+}
+.move dt {
+  font-weight: 700;
+  font-size: 14px;
+  color: #296897;
+}
+.move dd {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 2px;
+}
+.move img {
+  height: 68px;
+  width: 60px;
+  display: inline-block;
+}
