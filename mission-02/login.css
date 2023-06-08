@@ -44,12 +44,14 @@
 
 /* 아이디, 비밀번호 텍스트 */
 fieldset label {
+  float: left;
   width: 56px;
   height: 21px;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  display: inline-block;
+  display: block;
+  margin-top: 3px;
 }
 
 /* 아이디, 비밀번호 input */
@@ -58,14 +60,22 @@ fieldset label {
   height: 24px;
   border: 1.5px solid #cccccc;
   border-radius: 5px;
-  margin-left: -2px;
   padding: -1px 8px;
+  box-sizing: border-box;
+  float: left;
+}
+
+/* 아이디 폼 */
+.id_form::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* 로그인 버튼 */
 .login__form button {
   width: 62px;
-  height: 64px;
+  height: 58px;
   background: #ed552f;
   border-radius: 5px;
   color: #fff;
@@ -87,7 +97,7 @@ fieldset label {
 
 .login__box ul li {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 /* 구분선 */
@@ -95,7 +105,7 @@ fieldset label {
   background: #cccccc;
   width: 240px;
   height: 1.2px;
-  margin-top: -5px;
+  margin-top: 40px;
 }
 
 /* 회원가입 및 아이디/비밀번호 찾기 링크 */
