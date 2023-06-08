@@ -1,0 +1,106 @@
+/* 로그인 전체 박스 */
+.login__box {
+  padding: 12px;
+  width: 260px;
+  height: 161px;
+  background: linear-gradient(90deg, #ed552f 0%, #e8852e 100%);
+  box-shadow: 5px 5px 0px #aaaaaa;
+  border-radius: 5px;
+}
+
+/* 로그인 제목 텍스트 */
+.login__box h1 {
+  width: 39px;
+  height: 23px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22.5px;
+  color: #ffff00;
+  margin-top: 3px;
+}
+
+/* 로그인 폼 박스 */
+.login__form {
+  width: 260px;
+  height: 120px;
+  background: #ffffff;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* 간격 조절 */
+.id_form {
+  padding: 5px 0px;
+}
+
+/* 로그인 폼 내부 요소 스타일 */
+.login__form fieldset {
+  border: none; /* 폼 내부 요소의 테두리 제거 */
+}
+
+.login__form legend {
+  display: none; /* 폼 내부 요소의 보이지 않게 설정 */
+}
+
+/* 아이디, 비밀번호 텍스트 */
+fieldset label {
+  width: 56px;
+  height: 21px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  display: inline-block;
+}
+
+/* 아이디, 비밀번호 input */
+.login__form input {
+  width: 100px;
+  height: 24px;
+  border: 1.5px solid #cccccc;
+  border-radius: 5px;
+  margin-left: -2px;
+  padding: -1px 8px;
+}
+
+/* 로그인 버튼 */
+.login__form button {
+  width: 62px;
+  height: 64px;
+  background: #ed552f;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* 회원가입 및 아이디/비밀번호 찾기 링크 스타일 */
+.login__box ul {
+  width: 220px;
+  padding-top: 6px;
+  padding-left: 25px;
+}
+
+.login__box ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+/* 구분선 */
+.line {
+  background: #cccccc;
+  width: 240px;
+  height: 1.2px;
+  margin-top: -5px;
+}
+
+/* 회원가입 및 아이디/비밀번호 찾기 링크 */
+.login__box a {
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+}
