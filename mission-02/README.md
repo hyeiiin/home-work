@@ -1,4 +1,4 @@
-<img width="303" alt="로그인 과제2" src="https://github.com/hyeiiin/home-work/assets/126502807/1007f1c1-9a82-4222-9a3d-9f0b53407102">
+<img width="303" alt="login" src="https://github.com/hyeiiin/home-work/assets/126502807/ac2f5214-7e7d-41e9-9d90-0f1f061282bf">
 
 .login\_\_box: 로그인 폼을 감싸는 컨테이너 역할을 하는 <div> 요소
 
