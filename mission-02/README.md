@@ -11,3 +11,4 @@ placeholder사용해서 사용자가 무엇을 입력해야 하는지 알 수 �
 <ul>: 목록을 나타내는 <ul> 요소
 로그인 버튼을 나타내는 <button> 요소 
 type속성이 "submit"으로 설정, class 속성이 "formInput__button"으로 지정
+<img width="303" alt="로그인 과제2" src="https://github.com/hyeiiin/home-work/assets/126502807/1007f1c1-9a82-4222-9a3d-9f0b53407102">
