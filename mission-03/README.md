@@ -3,7 +3,7 @@
 <br>
 
 ## ⚙️ 사용기술 
-HTML, CSS(flex, transiton...)
+HTML, CSS(flex, transition...)
 
 <br>
 
