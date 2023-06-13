@@ -1,0 +1,361 @@
+/* 숨김 콘텐츠 */
+.a11y,
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* 전체 리셋 */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.15;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select,
+option {
+  font-size: 14px;
+}
+
+/* 메인 콘텐츠 */
+/* 페이지 위치 조정한 값 */
+.main-content {
+  margin: 50px;
+  width: 300px;
+}
+
+/* 1. 로그인 */
+
+.login {
+  background: radial-gradient(circle at right top, orange, orangered);
+  /* x축 / y축 / 블러 / 그림자 크기 */
+  box-shadow: 5px 5px 0 0 #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.login-title {
+  color: yellow;
+  font-size: 18px;
+  font-weight: 700;
+  /* 텍스트 들여쓰기 */
+  text-indent: 0.5em;
+  /* 9px */
+}
+
+/* 아이디 입력, 비밀번호 입력 */
+.login-form {
+  background: #fff;
+  padding: 10px 10px 0 10px;
+  border-radius: 5px 5px 0 0;
+  margin-top: 10px;
+}
+
+/* 대체로 fieldset에는 스타일링을 하지 않는 것을 권장 다만 해당 문서에서는 예외적으로 적용한 것 */
+.login-form fieldset {
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #aaa;
+}
+
+.user-email,
+.user-pwd {
+  font-size: 0;
+}
+
+.user-pwd {
+  margin-top: 5px;
+}
+
+.login-form label {
+  display: inline-block;
+  width: 60px;
+  font-size: 14px;
+}
+
+.login-form input {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  width: 120px;
+  height: 24px;
+  padding: 1px 1px 1px 5px;
+}
+
+.login-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 3px;
+  background: orangered;
+  color: #fff;
+  font-size: 14px;
+  /* width를 주지 않을 것이라면 padding을 주어야 함 */
+  padding: 0;
+  border: 0;
+  width: 50px;
+  height: 61px;
+}
+
+.login-member {
+  background: #fff;
+  padding: 4px;
+  border-radius: 0 0 5px 5px;
+  display: flow-root;
+  font-size: 14px;
+}
+
+.login-member li:first-child {
+  float: left;
+}
+
+.login-member li:last-child {
+  float: right;
+}
+
+.login-member a {
+  /* 구분선과 텍스트 사이 패딩 주기 위해 */
+  display: block;
+  padding: 6px;
+}
+
+/* 2. 유효성 검사 */
+
+.validation-list {
+  margin-top: 25px;
+  /* 투명하게 설정하여 마진 겹침이 없는 것처럼 속인 것 */
+  /* border: 1px solid transparent; */
+}
+
+/* 마진 겹침 현상 */
+.validation-list li {
+  margin: 10px 0;
+}
+
+.validation-list a {
+  background: url(./assets/validation_icon.png) no-repeat 25px 50%,
+    linear-gradient(to bottom, #ccc, #eee);
+  display: block;
+  padding: 10px 10px 10px 50px;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+}
+
+/* 3. 웹 관련 용어 */
+
+.term {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #ccc;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.term-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.term-list {
+  /* background: skyblue; */
+}
+
+.term-list-wrapper {
+  margin-top: 10px;
+  display: flow-root;
+}
+
+.term-list-subject {
+  float: right;
+  width: 200px;
+  color: #296897;
+  font-weight: 700;
+}
+
+.term-list-thumnail {
+  float: left;
+}
+
+.term-list-thumnail img {
+  display: block;
+}
+
+.term-list-brief {
+  float: right;
+  width: 200px;
+  margin-top: 5px;
+}
+
+/* 1번째 방법: div를 직접 지정하는 것은 안티패턴으로 볼 수 있음
+
+.term-list div:nth-child(even) .term-list-subject,
+.term-list div:nth-child(even) .term-list-brief {
+  float: left;
+}
+
+.term-list div:nth-child(even) .term-list-thumnail {
+  float: right;
+} */
+
+/* 2번째 방법: 몇 번째 자식인지 명시하여 지정하는 방법
+
+.term-list .term-list-wrapper:nth-child(even) .term-list-subject,
+.term-list .term-list-wrapper:nth-child(even) .term-list-brief {
+  float: left;
+}
+
+.term-list .term-list-wrapper:nth-child(even) .term-list-thumnail {
+  float: right;
+} */
+
+/* 3번째 방법: cross 클래스를 활용한 방법(위 2가지 방법은 클래스명과 자식요소에 대한 지정으로 코드가 길어짐) */
+.cross .term-list-subject,
+.cross .term-list-brief {
+  float: left;
+}
+
+.cross .term-list-thumnail {
+  float: right;
+}
