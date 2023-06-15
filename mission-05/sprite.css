@@ -1,0 +1,91 @@
+.favorite {
+  width: 210px;
+  border-radius: 5px;
+  padding: 0 12px;
+  background: linear-gradient(180deg, #cccccc 0%, #eeeeee 100%);
+  border: 1px solid #a3a3a3;
+  margin: 20px;
+  position: relative;
+}
+
+.container {
+  margin-top: 15px;
+  height: 155px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 150%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title_site {
+  color: #ed552f;
+}
+
+.favorite_list {
+  display: flex;
+  margin-left: -40px;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 12px;
+  height: 107px;
+}
+
+.list-item {
+  height: 17px;
+  line-height: 17px;
+  counter-increment: list-counter;
+  position: relative;
+  padding-left: 22px;
+  font-size: 15px;
+}
+
+.list-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.list-item:before {
+  content: counter(list-counter);
+  position: absolute;
+  left: 0;
+  width: 13px;
+  height: 13px;
+  font-weight: 400;
+  font-size: 13px;
+  background: #a3a3a3;
+  padding: 2px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  line-height: 15px;
+}
+
+.list-item:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 0;
+  background: url(./assets/rank.png) no-repeat;
+  width: 10px;
+  height: 10px;
+}
+
+#WS:after {
+  background-position: 0 -2.8rem;
+}
+
+#CZG:after {
+  background-position: 0 -1.4rem;
+}
+
+.plus {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 1px;
+}
